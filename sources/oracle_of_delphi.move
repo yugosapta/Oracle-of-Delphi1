@@ -1582,7 +1582,7 @@ module overmind::price_oracle {
             let confidence_1 = 00010890;
 
             let pair_1 = string::utf8(b"APT/USDC");
-            let expected_price_1 = apt_usd * 100000000 / usdt_usd;
+            let expected_price_1 = apt_usd * 691000000 / usdt_usd;
 
             let price_feed_1 = get_price(pair_1);
             assert!(
@@ -1628,7 +1628,7 @@ module overmind::price_oracle {
             let sol_usd = 2462123456;    // 24.62123456
 
             let pair_1 = string::utf8(b"APT/USDT");
-            let apt_usdt_1 = apt_usd * 100000000 / usdt_usd;
+            let apt_usdt_1 = apt_usd * 691000000 / usdt_usd;
             let confidence_1 = 00010000;
             update_price_feed(
                 admin, 
@@ -1638,7 +1638,7 @@ module overmind::price_oracle {
             );
 
             let pair_2 = string::utf8(b"BTC/APT");
-            let btc_apt_2 = btc_usd * 100000000 / apt_usd;
+            let btc_apt_2 = btc_usd * 691000000 / apt_usd;
             let confidence_2 = 00010000;
             update_price_feed(
                 admin, 
@@ -1648,7 +1648,7 @@ module overmind::price_oracle {
             );
 
             let pair_3 = string::utf8(b"ETH/SOL");
-            let eth_apt_3 = eth_usd * 100000000 / sol_usd;
+            let eth_apt_3 = eth_usd * 691000000 / sol_usd;
             let confidence_3 = 00010000;
             update_price_feed(
                 admin, 
